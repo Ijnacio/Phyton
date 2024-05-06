@@ -1,5 +1,4 @@
 #EJERCICIO  1
-from re import I
 
 
 liviano = 1000
