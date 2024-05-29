@@ -16,19 +16,20 @@ el programa muestra un mensaje y sale del bucle usando break.
 
 cantidad_pasajes = int(input("Cuantos pasajes desea vender: "))
 total_ingresos = 0
-"""
+
 for i in range(cantidad_pasajes):
     try: 
         precio_pasaje = int(input(f"Ingrese el precio del pasaje Nmr {i+1}: "))
         total_ingresos += precio_pasaje
-        
+       
     except ValueError:
-        print("Ingrese un valor numerico")
+        print("ERROR, ingresasate una letra")
         
         break
+    
 
 print(f"El monto total obtenido por la venta de {i} pasajes es: {total_ingresos}")
-"""
+
 
 total_pasajes = int(input("¿Cuántos pasajes deseas vender?: "))
 total_ingresos = 0
@@ -36,10 +37,11 @@ total_ingresos = 0
 for i in range(total_pasajes):
     while True:
         try:
-            precio_pasaje = float(input(f"Ingrese el precio del pasaje {i + 1}: "))
+            precio_pasaje = int(input(f"Ingrese el precio del pasaje {i + 1}: "))
             total_ingresos += precio_pasaje
             break
+        
         except ValueError:
             print("Por favor, ingrese un valor numérico válido.")
-
+            
 print(f"El monto total obtenido por la venta de {total_pasajes} pasajes es: {total_ingresos}")

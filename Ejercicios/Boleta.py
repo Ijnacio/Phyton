@@ -1,14 +1,16 @@
 
-while True:
-    
-    print("Bienvenido a Donde pepito")
-    nombre = str(input("¿Cual es su nombre?: "))
-    edad = int(input("¿Cual es su edad:?: "))
-    Precio_productos = 0
-    descuento = 0
-    descuento1 = 0
-    descuento_edad = 0
+print("Bienvenido a Donde pepito")
+nombre = str(input("¿Cual es su nombre?: "))
+edad = int(input("¿Cual es su edad:?: "))
+Precio_productos = 0
+descuento = 0
+descuento1 = 0
+descuento_edad = 0
 
+
+
+
+while True:
     print("1. Generar venta")
     print("2. Salir")
     print("Seleciona 1 o 2")
